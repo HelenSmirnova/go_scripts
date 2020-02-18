@@ -27,8 +27,7 @@ if (!window.jQuery) {
 
 
 function readyjQueryinit(){
-  var modifyBtn = document.getElementsByClassName('modify-search')[0];
-  modifyBtn.click();
+  $(".modify-search").click();
 }
 
 
