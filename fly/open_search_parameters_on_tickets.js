@@ -1,3 +1,14 @@
+function doo(){	
+  var modifyBtn = document.getElementsByClassName('obe-login')[0];
+  modifyBtn.click();
+  var modalBg = document.getElementsByClassName('mat-dialog-backdrop-light')[0];
+  modalBg.style.visibility = 'hidden';
+}
+
+
+
+
+
 // function initjQuery(callback) {
 // 	var script = document.createElement( "script" )
 // 	script.type = "text/javascript";
@@ -26,11 +37,5 @@
 
 
 
-function doo(){	
-  var modifyBtn = document.getElementsByClassName('modify-search')[0];
-  modifyBtn.click();
-  var modalBg = document.getElementsByClassName('mat-dialog-backdrop-light')[0];
-  modalBg.style.visibility = 'hidden';
-}
 
 
