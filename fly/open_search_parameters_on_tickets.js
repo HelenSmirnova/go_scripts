@@ -16,6 +16,24 @@ function initjQuery(callback) {
     script.src = '//code.jquery.com/jquery-3.3.1.min.js';
     document.getElementsByTagName("head")[0].appendChild(script);
 }
+
+function readyjQueryinit() {
+     $( document ).ready(function() {
+        console.log( "document loaded" );
+          $("div.modify-search").load(function () {
+            $(".way-oneway").click();
+        });
+    });
+ 
+//     setInterval(function () {
+//         $("modify-search").load(function () {
+//             $(".way-oneway").click();
+//         });
+//     }, 300);
+
+}
+
+
 if (!window.jQuery) {
     initjQuery(function () {
         readyjQueryinit();
@@ -26,14 +44,7 @@ if (!window.jQuery) {
 
 
 
-function readyjQueryinit() {
-    setInterval(function () {
-        $("modify-search").load(function () {
-            $(".way-oneway").click();
-        });
-    }, 300);
 
-}
 
 
 
