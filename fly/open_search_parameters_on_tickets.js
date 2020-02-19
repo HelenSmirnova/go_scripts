@@ -18,11 +18,10 @@ function initjQuery(callback) {
 }
 
 function readyjQueryinit() {
-     console.log( "document loaded" );
-      $("div.modify-search").load(function () {
-        $(".way-oneway").click();
-    });
-}
+    setInterval(function(){
+		$(".way-oneway").click();
+	}, 3000);
+    }
 
 if (!window.jQuery) {
     initjQuery(function () {
