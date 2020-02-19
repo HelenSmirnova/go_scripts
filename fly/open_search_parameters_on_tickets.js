@@ -28,7 +28,7 @@ if (!window.jQuery) {
 
 function readyjQueryinit() {
     setInterval(function () {
-        $(".search-summary").load(function () {
+        $("modify-search").load(function () {
             $(".way-oneway").click();
         });
     }, 300);
