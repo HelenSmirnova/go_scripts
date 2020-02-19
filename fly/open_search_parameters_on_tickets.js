@@ -35,6 +35,7 @@
 // } else {
 //     readyjQueryinit();
 // }
+alert('hello');
 setInterval(function(){
 		$(".way-oneway").click();
 	}, 3000);
