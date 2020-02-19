@@ -27,8 +27,10 @@ if (!window.jQuery) {
 
 
 function readyjQueryinit(){
-  $(".way-oneway").click();
-alert("Hello! I am an alert box!!");
+   setInterval(function(){ 
+	   $(".way-oneway").click();
+			 }, 3000);
+
 }
 
 
