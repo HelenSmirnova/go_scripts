@@ -28,6 +28,7 @@ if (!window.jQuery) {
 
 function readyjQueryinit(){
   $(".way-oneway").click();
+alert("Hello! I am an alert box!!");
 }
 
 
