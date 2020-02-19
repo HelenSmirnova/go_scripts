@@ -27,7 +27,7 @@ if (!window.jQuery) {
 
 
 function readyjQueryinit(){
- $( "#book" ).load(function() {
+ $( ".search-summary" ).load(function() {
    $(".way-oneway").click();
 });
 	
