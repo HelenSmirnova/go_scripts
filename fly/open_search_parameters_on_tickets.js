@@ -1,41 +1,43 @@
-function initjQuery(callback) {
-    var script = document.createElement("script")
-    script.type = "text/javascript";
-    if (script.readyState) {
-        script.onreadystatechange = function () {
-            if (script.readyState === "loaded" || script.readyState === "complete") {
-                script.onreadystatechange = null;
-                callback();
-            }
-        };
-    } else {
-        script.onload = function () {
-            callback();
-        };
-    }
-    script.src = '//code.jquery.com/jquery-3.3.1.min.js';
-    document.getElementsByTagName("head")[0].appendChild(script);
-}
+// function initjQuery(callback) {
+//     var script = document.createElement("script")
+//     script.type = "text/javascript";
+//     if (script.readyState) {
+//         script.onreadystatechange = function () {
+//             if (script.readyState === "loaded" || script.readyState === "complete") {
+//                 script.onreadystatechange = null;
+//                 callback();
+//             }
+//         };
+//     } else {
+//         script.onload = function () {
+//             callback();
+//         };
+//     }
+//     script.src = '//code.jquery.com/jquery-3.3.1.min.js';
+//     document.getElementsByTagName("head")[0].appendChild(script);
+// }
 
-function readyjQueryinit() {
-	setInterval(function(){
-		$(".way-oneway").click();
-	}, 100);	
-	
-	
-//     setInterval(function(){
+// function readyjQueryinit() {
+// 	setInterval(function(){
 // 		$(".way-oneway").click();
-// 	}, 3000);
-    }
+// 	}, 100);	
+	
+	
+// //     setInterval(function(){
+// // 		$(".way-oneway").click();
+// // 	}, 3000);
+//     }
 
-if (!window.jQuery) {
-    initjQuery(function () {
-        readyjQueryinit();
-    });
-} else {
-    readyjQueryinit();
-}
-
+// if (!window.jQuery) {
+//     initjQuery(function () {
+//         readyjQueryinit();
+//     });
+// } else {
+//     readyjQueryinit();
+// }
+setInterval(function(){
+		$(".way-oneway").click();
+	}, 3000);
 
 
 
