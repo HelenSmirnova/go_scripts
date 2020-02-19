@@ -27,10 +27,10 @@ if (!window.jQuery) {
 
 
 function readyjQueryinit(){
-   setInterval(function(){ 
-	   $(".way-oneway").click();
-			 }, 3000);
-
+ $( "#book" ).load(function() {
+   $(".way-oneway").click();
+});
+	
 }
 
 
