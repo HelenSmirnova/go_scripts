@@ -27,7 +27,7 @@ if (!window.jQuery) {
 
 
 function readyjQueryinit(){
-  $(".modify-search").click();
+  $(".way-oneway").click();
 }
 
 
